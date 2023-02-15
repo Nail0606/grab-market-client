@@ -1,3 +1,9 @@
+* {
+  margin: 0; /*기본적으로 모든태그에는 조금의 테두리 영역이 존재하는데, 그 영역을 없앰*/
+  padding: 0;
+  line-height: normal;
+}
+
 html,
 body,
 #root,
@@ -10,6 +16,19 @@ body,
   border-bottom: 1px solid gray;
   display: flex; /*flex layout을 사용하겠다*/
   justify-content: center; /*자식 요소들을 가운데 정렬*/
+}
+
+#header-area {
+  width: 1024px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-area img {
+  width: 128px; /*이미지의 종횡비를 유지하면서 크기만 줄임*/
+  height: 36px;
 }
 
 #body {
